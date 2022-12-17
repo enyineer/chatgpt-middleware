@@ -6,7 +6,8 @@ Uses [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) for backg
 ## Setup
 - Move .env.example to .env
 - Edit the contents of .env to your needs
-- Run yarn start
+- Run `yarn start`
+- Follow the instructions of the Puppeteer Browser window that opens (eg. resolve Captcha)
 
 ### Important
 If ChatGPT Servers are busy, the application can not be initialized. If that happens an error like this is thrown:
