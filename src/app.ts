@@ -30,7 +30,7 @@ async function main() {
 
   await api.initSession();
 
-  app.get('/message', async (req: Request, res: Response) => {
+  app.get('/text', async (req: Request, res: Response) => {
     const q = req.query.q;
     
     if (q === undefined || q === '') {
