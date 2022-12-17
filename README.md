@@ -3,6 +3,20 @@ A very simple and dumb REST API for interaction with ChatGPT
 
 Uses [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api) for background operation.
 
+## Setup
+- Move .env.example to .env
+- Edit the contents of .env to your needs
+- Run yarn start
+
+### Important
+If ChatGPT Servers are busy, the application can not be initialized. If that happens an error like this is thrown:
+
+```
+ChatGPTError: ChatGPT is at capacity
+```
+
+If that's the case you have to wait until ChatGPT is up again for the API to work.
+
 ## API
 ### GET /text
 Sends a text to ChatGPT and returns the response.
